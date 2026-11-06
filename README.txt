@@ -16,7 +16,7 @@ Google Maps link: Gadag map search (not an exact verified office pin)
 Privacy Policy and Terms date: 5 November 2026
 Google Play developer profile: https://play.google.com/store/apps/dev?id=7723937304811503706
 
-WHAT IS INCLUDED
+WHAT IS INCLUDED HERE
 ----------------
 - 18 responsive HTML pages with navy, metallic-gold and white branding.
 - 12-app portfolio and Google Play links retained.
