@@ -16,7 +16,7 @@ Google Maps link: Gadag map search (not an exact verified office pin)
 Privacy Policy and Terms date: 5 November 2026
 Google Play developer profile: https://play.google.com/store/apps/dev?id=7723937304811503706
 
-WHAT IS INCLUDED HERE
+WHAT IS INCLUDED
 ----------------
 - 18 responsive HTML pages with navy, metallic-gold and white branding.
 - 12-app portfolio and Google Play links retained.
@@ -90,3 +90,21 @@ FINAL CHECKS
 [ ] Verify all 12 Google Play listings.
 [ ] Review legal pages against actual practices with a qualified professional.
 [ ] Check portfolio permissions and claims before public launch.
+
+
+RESPONSIVE + CONTACT ENHANCEMENTS (2026)
+- Mobile and desktop responsive improvements, viewport/safe-area support, touch targets, and reduced-motion support.
+- Floating WhatsApp, Call, and Email actions are present on every page.
+- WhatsApp opens the owner-provided prefilled message for +91 96631 19572.
+- Contact information and Google Maps location are set in assets/business-config.js.
+- Mobile navigation closes on link selection, outside tap, and Escape.
+- Image assets are not yet added in this update; awaiting the image attachment batch from the owner.
+
+Business contact: +91 96631 19572 | tejyashtechnologies@gmail.com
+Location: 9JR2+57C, Malasamudra, Karnataka, India
+Maps: https://www.google.com/maps/search/?api=1&query=9JR2%2B57C%2C+Malasamudra%2C+Karnataka%2C+India
+WhatsApp: https://wa.me/919663119572?text=Hello%20TEJYASH%20TECHNOLOGIES%2C%20I%20am%20interested%20in%20your%20software%20development%20services.%20Please%20share%20more%20details.
+
+
+BRAND ASSETS INCLUDED (11 ORIGINAL UPLOADS)
+The assets/brand folder includes the developer banner, A4 business banner, 3D logo, business card, digital banner, logo badge, shop banner, shop banner with phone number, shop board, WhatsApp banner, and WhatsApp profile photo. These images are integrated into the Home, About, Services, Portfolio, and Contact pages with responsive CSS and lazy loading.
