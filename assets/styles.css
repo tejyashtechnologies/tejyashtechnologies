@@ -62,3 +62,32 @@ body{font-feature-settings:"kern";-webkit-font-smoothing:antialiased}
 
 .app-search{max-width:520px;margin:24px 0 8px}.app-search label{display:block;font-weight:700;margin-bottom:7px}.app-search input{width:100%;padding:14px 16px;border:1px solid #dce2e9;border-radius:999px;font:inherit}.app-card[hidden]{display:none}
 .social-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}.social-links a{font-size:12px;color:#cbd5e1}.social-links a[hidden]{display:none!important}\n
+/* Responsive/mobile reliability and accessible quick contact actions */
+html{scroll-padding-top:88px;-webkit-text-size-adjust:100%;text-size-adjust:100%;overflow-x:hidden}
+body{overflow-x:hidden;min-width:320px}
+img,svg,video,iframe{max-width:100%}
+button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}
+button,a{touch-action:manipulation}
+:focus-visible{outline:3px solid #d9b65f;outline-offset:3px}
+.quick-contact{position:fixed;right:20px;bottom:20px;z-index:40;display:flex;flex-direction:column;gap:11px}
+.quick-action{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 8px 24px #0003;border:2px solid #ffffff45;transition:transform .2s,box-shadow .2s}
+.quick-action:hover{transform:translateY(-3px);box-shadow:0 12px 28px #0004}
+.quick-action svg{width:27px;height:27px;fill:currentColor}
+.quick-action.whatsapp{position:static;background:#16a765;font-size:0}
+.quick-action.phone{background:#1b6fc2}
+.quick-action.email{background:#c28b27}
+@media(max-width:800px){.site-header{height:auto;min-height:72px;padding-top:env(safe-area-inset-top);position:sticky}.main-nav{max-height:calc(100dvh - 80px);overflow-y:auto}.hero,.page-hero{overflow:hidden}.hero-art{max-width:100%;overflow:visible}.section,.page-hero{width:100%}.quick-contact{right:12px;bottom:calc(12px + env(safe-area-inset-bottom));gap:9px}.quick-action{width:48px;height:48px}.quick-action svg{width:23px;height:23px}.contact-form,.price-card,.app-card,.service-card,.info-card{min-width:0}}
+@media(max-width:480px){.brand b{font-size:17px;letter-spacing:1.5px}.brand small{letter-spacing:2.5px}.hero h1,.page-hero h1{font-size:clamp(34px,10vw,44px)}.lead,.page-hero p:not(.eyebrow){font-size:15px}.btn{min-height:46px}.card-grid,.apps-grid{gap:13px}.contact-form{padding:20px 16px}.footer-main{gap:18px}.footer-main a,.footer-main span{overflow-wrap:anywhere}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* TEJYASH brand asset integration */
+.brand-visual { display:block; width:100%; height:auto; border-radius:20px; border:1px solid rgba(240,185,62,.35); box-shadow:0 14px 38px rgba(0,0,0,.28); }
+.brand-visual-wrap { max-width:1200px; margin:28px auto; padding:0 22px; }
+.brand-gallery { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+.brand-gallery figure { margin:0; background:rgba(8,22,42,.65); border:1px solid rgba(231,179,46,.25); border-radius:18px; padding:12px; overflow:hidden; }
+.brand-gallery img { display:block; width:100%; height:auto; border-radius:12px; object-fit:contain; }
+.brand-gallery figcaption { padding:10px 4px 2px; color:var(--text, #e8edf6); font-size:.92rem; }
+.brand-showcase { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; align-items:center; }
+.brand-showcase > img { width:100%; height:auto; border-radius:18px; border:1px solid rgba(242,185,48,.35); }
+.brand-wide-image { width:100%; height:auto; display:block; border-radius:20px; }
+@media(max-width:700px){ .brand-gallery,.brand-showcase{grid-template-columns:1fr;} .brand-visual-wrap{padding:0 14px;margin:20px auto;} .brand-gallery figure{padding:8px;} }

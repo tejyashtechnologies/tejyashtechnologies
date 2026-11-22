@@ -1,7 +1,7 @@
 const cfg=window.TEJYASH_CONFIG||{};
 const toggle=document.querySelector('.menu-toggle');
 const nav=document.querySelector('.main-nav');
-if(toggle&&nav){toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});}
+if(toggle&&nav){toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');}));document.addEventListener('keydown',e=>{if(e.key==='Escape'){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');}});document.addEventListener('click',e=>{if(!nav.contains(e.target)&&!toggle.contains(e.target)){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');}});}
 const year=document.getElementById('year'); if(year) year.textContent=new Date().getFullYear();
 const fullAddress=[cfg.addressLine1,cfg.addressLine2,cfg.state,cfg.postalCode,cfg.country].filter(Boolean).join(', ');
 document.querySelectorAll('[data-config]').forEach(el=>{
